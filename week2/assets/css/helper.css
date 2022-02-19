@@ -1,0 +1,30 @@
+.text-center{
+    text-align: center;
+}
+
+.font-medium{
+    font-weight: 300;
+}
+
+.headline{
+
+    font-size: 3rem;
+}
+
+.font-wrap{
+    word-wrap: break-word;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
