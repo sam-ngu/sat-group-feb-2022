@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/helper.css">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    
+    <section class="hide" id="section-timer">
+        Time Remaining: <span id="span-time"></span>s
+    </section>
+
+
+    <!-- landing -->
+    <section id="section-landing">
+
+        <h1>Start Game page BEST GAME EVARR</h1>
+
+        <button id="button-start" >Start game</button>
+    </section>
+
+    <!-- questions -->
+    <section class="hide" id="section-questions">
+        
+        <!-- title -->
+        <h1 id="question-title"></h1>
+
+
+        <!-- choices -->
+        <ul id="question-choices">
+            <!-- <li><button>Good</button></li>
+            <li><button>Yea nah</button></li>
+            <li><button>Bad</button></li> -->
+        </ul>
+
+    </section>
+
+
+
+
+
+    <!-- submit initials -->
+    <section class="hide" id="section-initials">
+        <h1>All done</h1>
+        <h2>Your highscore is: <span id="span-final-highscore"></span></h2>
+
+        <label for="input-initials">Initials</label>
+
+        <input id="input-initials" type="text">
+        <button>Submit</button>
+
+
+
+
+    </section>
+
+    <!-- highscore -->
+    <section class="hide" id="section-highscore">
+        <h1>Highscore</h1>
+
+        <ul>
+            <li>Sam -- 1</li>
+            <li>Chi -- 2 </li>
+        </ul>
+        <!-- back -->
+        <button>play again</button>
+        <!-- clear  -->
+        <button>Clear</button>
+
+
+    </section>
+
+
+
+
+    <script src="assets/questions.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
