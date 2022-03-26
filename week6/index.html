@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <main>
+            <nav>
+                <h1 class="text-center">Weather Dashboard</h1>
+            </nav>
+
+            <section class="px-4">
+                <section class="row">
+                    <div class="col-3">
+                        <form id="form-search">
+                            <!-- search -->
+                            <h2>Search fo a City:</h2>
+
+                            <input id="input-city" type="text" placeholder="Perth" />
+
+                            <button class="btn btn-primary btn-block">
+                                Search
+                            </button>
+                        </form>
+
+                        <ul>
+                            <li>Perth</li>
+                            <li>Melbourne</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-9">
+                        <!-- weather data -->
+
+                        <section class="row">
+                            <!-- todays weather -->
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 id="today-city" class="card-title">Perth (26-3-2022) </h4>
+                                        <img id="img-today-icon" >
+                                        <p class="card-text">
+                                            
+                                            <ul>
+                                                <li>Temperature: <span id="span-today-temp"></span> °C</li>
+                                                <li>wind speed 50km/h</li>
+                                            </ul>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </section>
+                        <section class="row">
+                            <article class="col">
+                                <!-- forecast card -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">26 3 2022</h4>
+                                        <p class="card-text">
+                                            
+                                            <ul>
+                                                <li>wind speed 50km/h</li>
+                                            </ul>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-2"></article>
+                            <article class="col-2"></article>
+                            <article class="col-2"></article>
+                            <article class="col-2"></article>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
