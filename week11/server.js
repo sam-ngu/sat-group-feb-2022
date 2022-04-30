@@ -6,12 +6,14 @@ const app = express();
 
 // config
 const PORT = 3001;
+app.use( express.static('public'));
+
+app.use(express.json());
 
 app.use(webRouter);
 app.use(apiRouter);
 
 
-app.use( express.static('public') );
 
 
 
