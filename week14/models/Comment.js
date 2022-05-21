@@ -22,7 +22,7 @@ Comment.init(
         key: "id",
       },
     },
-    user_id: {
+    post_id: {
       type: DataTypes.INTEGER,
       references: {
         model: Post,
@@ -35,7 +35,7 @@ Comment.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: "Comment",
+    modelName: "comment",
   }
 );
 
