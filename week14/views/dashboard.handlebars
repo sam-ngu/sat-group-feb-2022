@@ -1,0 +1,23 @@
+
+
+<div>
+
+
+  <a href="/posts/new">Create new post</a>
+
+  {{#each posts as |post|}}
+
+    <article>
+
+      <a href="/posts/{{post.id}}"><h1>{{post.title}}</h1> </a> 
+      <h4>Created at: {{ format_date post.createdAt}}</h4>
+      <h4>By: {{ post.user.email }}</h4>
+      <p>{{post.content}}</p>
+
+
+    </article>
+
+  {{/each}}
+
+
+</div>

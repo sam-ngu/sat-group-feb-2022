@@ -15,7 +15,7 @@ async function seedUsers(num = 10) {
 
   for (let index = 0; index < num; index++) {
     const email = faker.internet.email();
-    const password = faker.internet.password(8);
+    const password = "password";
 
     await User.create({
       email,
@@ -23,6 +23,12 @@ async function seedUsers(num = 10) {
     })
     
   }
+
+  await User.create({
+    email: 'sam@test.com',
+    password: 'password'
+  })
+
 }
 
 async function seedComment(num = 10) {
