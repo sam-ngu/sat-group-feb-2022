@@ -28,10 +28,11 @@ const thoughtSchema = new Schema(
     },
 
     reactions: [reactionSchema],
-    
+
   },
   {
     id: true,
+    
     timestamps: true,
 
   }
