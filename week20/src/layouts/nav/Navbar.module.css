@@ -1,0 +1,26 @@
+.navbar{
+  background-color: rgb(54, 168, 255);
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+.navbar>li{
+  margin: 0 5px;
+}
+
+.navbar>li>a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.navbar>li>a:hover{
+  color: rgb(169, 233, 255);
+}
+
+
+
+

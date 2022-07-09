@@ -1,0 +1,21 @@
+.section{
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.section>img{
+  width: 40%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .section{
+    flex-direction: column;
+  }
+ .section>img {
+   width: 80%;
+ }
+  
+}
