@@ -12,7 +12,15 @@ function checkLogin(context){
 
 const resolvers = {
   Query: {
-    me: async (parent, args, context) => checkLogin(context),
+    me: async (parent, args, context) => {
+      
+      const jwtUser = checkLogin(context);
+      console.log(jwtUser);
+      
+      return await User.findById(jwtUser._id);
+      
+
+    },
   },
   Mutation: {
     async login(parent, {email, password}, context){
